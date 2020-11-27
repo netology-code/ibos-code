@@ -4,7 +4,7 @@
 
 Остальные команды из лекции:
 ```shell
-gcc main.c -o main && ./main # обычная сборка и запуск со stack-protector'ом (включен по умолчанию)
+gcc -fstack-protector-all main.c -o main && ./main # обычная сборка и запуск со stack-protector'ом (включен по умолчанию)
 
 clang main.c -o main && ./main # обычная сборка и запуск clang (выдаёт по умолчанию предупреждения)
 ```
